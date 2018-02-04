@@ -1,0 +1,238 @@
+/*#color
+#445861 Independence gray
+#F5511E orange
+#FFFFFF white
+#4299D4 blue
+#3283BC Cyan-Blue
+#EFE9E7 alab
+#EFE9E7 M Blue
+#2C666E S blue
+*/
+
+/*Global stylesheet
+...............................*/
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+body{
+  font-family: 'Radley', serif;
+  margin: 0;
+}
+h1, h2{
+  font-family: 'Special Elite', cursive;
+  padding-top: 75px;
+}
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 30px;
+}
+h3{
+  margin: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap{
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+
+nav {
+  text-align: center;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background:#111111;
+  z-index:2;
+  font-weight: bold;
+}
+nav a{
+  display:inline-block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+
+.btn{
+  text-decoration: none;
+  background-color:#FFFFFF;
+  color: #111111;
+  z-index:1;
+  padding: 10px;
+  display: inline-block;
+}
+/*Header and footer
+...............................*/
+
+header{
+  background:#FFFFFF ;
+  color: #111111;
+  position: relative;
+  padding-top: 10px;
+}
+header h1, header h2{
+  color:#4299D4;
+  margin: 0;
+}
+
+footer h2{
+  font-family: 'Audiowide', cursive;
+}
+footer {
+  background: #111111;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.contact-info{
+  padding:40px;
+}
+.contact-info a{
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.download{
+  position: absolute;
+  bottom: 0;
+  right:0;
+}
+/*Cerfications
+...............................*/
+.cerfications{
+  background: #4299D4;
+}
+/*Work
+...............................*/
+.work{
+  background: #EFE9E7;
+  margin-bottom: 0;
+}
+h3 ~ p{
+  margin: 0;
+}
+
+.job-dis p:first-of-type{
+  margin-top: 0;
+}
+/*Education
+...............................*/
+.education{
+  background: linear-gradient(rgba(239, 233, 231, 0.8),rgba(239, 233, 231,0.8)),url(https://s3.amazonaws.com/kiranreddystaticbucket/Resume/images/image1.jpg) no-repeat;
+  background-size: cover;
+}
+
+.projects{
+  background: linear-gradient(rgba(239, 233, 231, 0.8),rgba(239, 233, 231,0.8)),url(https://s3.amazonaws.com/kiranreddystaticbucket/Resume/images/imagebg.png) no-repeat;
+  background-size: cover;
+}
+/*Awards
+...............................*/
+.awards{
+  background: #2C666E;
+}
+/*Global stylesheet
+...............................*/
+@media (min-width: 824px) {
+  .col-narrow {
+    padding-top: 70px;
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 823px){
+  header {
+    text-align: center;
+  }
+  .proimg {
+    padding-top: 50px;
+    max-width: 100%;
+    height: auto;
+  }
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+}
+}
+.container {
+  position: relative;
+  width: 75%;
+}
+
+.image1 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+* {
+    box-sizing: border-box;
+}
+
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
